@@ -4,10 +4,6 @@
     padding-bottom: 94px;
 }
 
-.portfolio-gallery-item:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
-
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -21,6 +17,10 @@
 
 .portfolio-gallery-item {
     position: relative;
+    
+    &:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
 }
 
 .portfolio-gallery-overlay {
