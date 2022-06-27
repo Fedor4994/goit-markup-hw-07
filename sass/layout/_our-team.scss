@@ -3,11 +3,11 @@
     justify-content: center;
 }
 
-.social-list-item:not(:last-child) {
+.social-info-list__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.social-list-link {
+.social-info-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,17 +23,17 @@
         }
 }
 
-.social-list-link-icon {
+.social-info-list__icon {
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .social-list-link:hover &,
-    .social-list-link:focus & {
+    .social-info-list__link:hover &,
+    .social-info-list__link:focus & {
             fill: #ffffff;
         }
 }
 
-.employees-container {
+.our-team__employees {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 94px;
@@ -41,16 +41,16 @@
 
 
 
-.employees-card-content {
+.employees__card-content {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.employees-section {
+.our-team {
     background: #f5f4fa;
 }
 
-.employees-card {
+.employees__card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -61,7 +61,7 @@
         }
 }
 
-.employees-title {
+.employees__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.67;
@@ -73,7 +73,7 @@
     color: var(--color-title);
 }
 
-.employees-name {
+.employees__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -85,7 +85,7 @@
     color: var(--color-title);
 }
 
-.employees-position {
+.employees__position {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
