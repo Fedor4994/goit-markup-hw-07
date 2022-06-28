@@ -629,7 +629,7 @@ body {
   fill: var(--accent-color);
 }
 
-.filters-buttons-container {
+.container__filters-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -637,11 +637,11 @@ body {
   padding-bottom: 50px;
 }
 
-.filters-buttons-item:not(:last-child) {
+.filters-buttons__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-btn {
+.filters-buttons__btn {
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -657,31 +657,31 @@ body {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-btn:hover, .filter-btn:focus {
+.filters-buttons__btn:hover, .filters-buttons__btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
 
-.projects-list-container {
+.container__projects-list {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 94px;
 }
 
-.projects-list-item:not(:nth-child(3n)) {
+.projects-list__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.projects-list-item:not(:nth-last-child(-n+3)) {
+.projects-list__item:not(:nth-last-child(-n+3)) {
   margin-bottom: 30px;
 }
 
-.project-img-wrapper {
+.projects-list__img-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.project-list-overlay {
+.project-list__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -702,11 +702,11 @@ body {
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
 }
-.projects-list-link:hover .project-list-overlay, .projects-list-link:focus .project-list-overlay {
+.projects-list__link:hover .project-list__overlay, .projects-list__link:focus .project-list__overlay {
   transform: translateY(0%);
 }
 
-.projects-card-content {
+.projects-list__card-content {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -715,19 +715,19 @@ body {
   border: 1px solid #eeeeee;
 }
 
-.projects-list-item {
+.projects-list__item {
   background: #ffffff;
 }
 
-.projects-list-link {
+.projects-list__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects-list-link:hover, .projects-list-link:focus {
+.projects-list__link:hover, .projects-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-name {
+.projects-list__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -737,7 +737,7 @@ body {
   margin-bottom: 4px;
 }
 
-.project-description {
+.projects-list__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;

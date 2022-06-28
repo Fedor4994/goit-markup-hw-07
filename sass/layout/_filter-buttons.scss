@@ -1,4 +1,4 @@
-.filters-buttons-container {
+.container__filters-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,11 +6,11 @@
     padding-bottom: 50px;
 }
 
-.filters-buttons-item:not(:last-child) {
+.filters-buttons__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.filter-btn {
+.filters-buttons__btn {
     border: none;
     font-weight: 500;
     font-size: 16px;
