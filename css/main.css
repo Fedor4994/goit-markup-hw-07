@@ -289,7 +289,7 @@ body {
   align-items: center;
 }
 
-.page-header__contact-list {
+.page-header__contact {
   display: flex;
   align-items: center;
 }
@@ -330,7 +330,7 @@ body {
   content: "";
 }
 
-.email {
+.contact__email {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -339,23 +339,26 @@ body {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-right: 50px;
   color: var(--color-text);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.email:hover, .email:focus {
+.contact__email:hover, .contact__email:focus {
+  color: var(--accent-color);
+  fill: currentColor;
+}
+.contact__email:hover .contact__icon, .contact__email:focus .contact__icon {
   color: var(--accent-color);
   fill: currentColor;
 }
 
-.header__email {
-  margin-right: 50px;
-}
-
-.email__icon {
+.contact__icon {
   margin-right: 10px;
+  fill: var(--color-text);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone-number {
+.contact__phone-number {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -366,15 +369,15 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--color-text);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.phone-number:hover, .phone-number:focus {
+.contact__phone-number:hover, .contact__phone-number:focus {
   color: var(--accent-color);
   fill: currentColor;
 }
-
-.phone-number__icon {
-  margin-right: 10px;
+.contact__phone-number:hover .contact__icon, .contact__phone-number:focus .contact__icon {
+  color: var(--accent-color);
+  fill: currentColor;
 }
 
 .stydio-hero__container {
