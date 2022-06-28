@@ -61,7 +61,6 @@ body {
 .logo {
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-right: 93px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -69,6 +68,15 @@ body {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+.footer__logo {
+  padding-bottom: 20px;
+  padding-top: 0;
+}
+
+.header__logo {
+  margin-right: 93px;
 }
 
 .logo_theme_dark {
@@ -329,7 +337,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--color-text);
@@ -338,6 +345,10 @@ body {
 .email:hover, .email:focus {
   color: var(--accent-color);
   fill: currentColor;
+}
+
+.header__email {
+  margin-right: 50px;
 }
 
 .email__icon {
@@ -768,11 +779,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-}
-
-.footer__logo {
-  padding-bottom: 20px;
-  padding-top: 0;
 }
 
 .contact-list__container:not(:last-child) {
